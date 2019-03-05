@@ -209,7 +209,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
   position:relative;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 400;
   margin-bottom: 0px;
   color: #333333;
@@ -1097,8 +1097,8 @@ figure{
   width: 90px;
   height: 90px;
   font-size: 26px;
-  font-family: 'Monsterrat', serif;
-  font-weight: 700;
+  font-family: 'Montserrat', serif;
+  font-weight: 500;
   color: #333333;
   text-align: center;
   border-radius: 50%;
@@ -1522,7 +1522,7 @@ figure{
   display: block;
   font-size: 80px;
   line-height: 90px;
-  font-family: 'Monsterrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 59px;
@@ -1778,7 +1778,7 @@ figure{
   position: relative;
   font-size: 22px;
   line-height: 30px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 30px;
@@ -2133,7 +2133,7 @@ button.theme-btn{
 .service-style-two .tab-details-content .single-tab-content .content-box .title{
   position: relative;
   font-size: 30px;
-  font-family: 'Monsterrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   font-weight: 700;
   margin-bottom: 28px;
@@ -2194,7 +2194,7 @@ button.theme-btn{
   position: relative;
   display: inline-block;
   font-size: 24px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 700;
   color: #ffffff;
 }
@@ -2377,7 +2377,7 @@ button.theme-btn{
   position: relative;
   display: inline-block;
   font-size: 44px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 700;
   color: #333333;
   margin-bottom: 32px;
@@ -2486,7 +2486,7 @@ button.theme-btn{
   width: 90px;
   height: 90px;
   font-size: 26px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 700;
   color: #333333;
   text-align: center;
@@ -2972,7 +2972,7 @@ button.theme-btn{
   display: inline-block;
   float: right;
   font-size: 26px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   color: #D3AB5E;
   font-weight: 700;
   line-height: 35px;
@@ -3343,7 +3343,7 @@ button.theme-btn{
   position: relative;
   font-size: 44px;
   line-height: 52px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   color: #888888;
   font-weight: 800;
   margin-bottom: 21px;
@@ -3575,7 +3575,7 @@ button.theme-btn{
   position: relative;
   display: block;
   font-size: 18px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   line-height: 26px;
   font-weight: 400;
   color: #333333;

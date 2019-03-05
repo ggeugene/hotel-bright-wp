@@ -173,3 +173,45 @@ function room_custom_post_type() {
     register_taxonomy_for_object_type('room_cats', 'room');
   }
   add_action( 'init', 'room_custom_post_type' );
+
+  function get_rooms_slider() {
+
+    $args = array(
+        'orderby' => 'name',
+        'order' => 'ASC',
+        'posts_per_page' => -1,
+        'post_type' => 'room',
+        'post_status' => 'publish'
+    );
+
+    $query = new WP_Query($args);
+
+    $string = '';
+
+    if($query->have_posts()) {
+
+        foreach($query->posts as $post) {
+            $string .= '<div class="single-item inner-box">';
+            $string .= '<figure class="image-box">';
+            $string .= '<img src="' . get_the_post_thumbnail_url($post->ID) . '">';
+            $string .= '<div class="overlay-box"><div class="overlay-inner"><div class="content">';
+            $string .= '<a href="' . get_the_permalink($post->ID) . '" class="link"><i class="icon fas fa-link"></i></a>';
+            $string .= '</div></div></div></figure>';
+
+            $string .= '<div class="lower-content">';
+            $string .= '<div class="price">₴' . get_field('room_price', $post->ID) . '<span>в сутки</span></div>';
+            $string .= '<h3><a href="' . get_the_permalink($post->ID) . '">' . get_the_title($post->ID) . '</a></h3>';
+            $string .= '<div class="text">' . get_field('room_excerpt', $post->ID) . '</div>';
+            $string .= '<ul class="info-box">';
+            $string .= '<li class="link"><a href="' . get_the_permalink($post->ID) . '">Подробнее</a></li>';
+            $string .= '<li><i class="flaticon-television"></i></li><li><i class="flaticon-wifi-connection-signal-symbol"></i></li>';
+            $string .= '</ul></div></div>';
+        }
+
+    }
+
+    else $string .= 'No rooms found';
+
+    return $string;
+
+  }
