@@ -1,0 +1,10 @@
+images/**
+fonts/**
+webfonts/**
+js/**
+css/**
+inc/**
+*.html
+!js/script.js
+!css/style.css
+!css/responsive.css
