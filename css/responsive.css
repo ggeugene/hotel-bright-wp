@@ -109,6 +109,9 @@
 
 
 @media only screen and (max-width: 991px){
+  .single-room-list .image-box {
+    min-height: 300px;
+  }
   .google-map-section .map-content .content {
     width: 100%;
   }
@@ -209,6 +212,7 @@
     display: block;
     text-align: left;
     padding: 0px 25px 49px 30px;
+    border-left: none;
   }
   .single-room-list .content-box .right-content .price{
     margin: 0px;

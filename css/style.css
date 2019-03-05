@@ -1319,6 +1319,12 @@ figure{
   width: 100%;
   overflow: hidden;
 }
+.single-room-list .image-box {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .overlay-style-one .image-box {
   position: relative;
   display: block;
@@ -2410,7 +2416,7 @@ button.theme-btn{
 .single-room-list .content-box .left-content{
   position: relative;
   display: inline-block;
-  border-right: 1px solid #e1e6eb;
+  border-right: none;
   padding: 22px 25px 35px 30px;
   max-width: 568px;
 }
@@ -2478,7 +2484,8 @@ button.theme-btn{
   float: right;
   width: 230px;
   text-align: center;
-  padding: 49px 10px 49px 10px;
+  padding: 29px 10px 29px 10px;
+  border-left: 1px solid #e1e6eb;
 }
 .single-room-list .content-box .right-content .price{
   position: relative;
@@ -2487,7 +2494,7 @@ button.theme-btn{
   height: 90px;
   font-size: 26px;
   font-family: 'Montserrat', serif;
-  font-weight: 700;
+  font-weight: 500;
   color: #333333;
   text-align: center;
   margin: auto;
@@ -3082,6 +3089,7 @@ button.theme-btn{
 .default-form .form-group input[type='email'],
 .default-form .form-group input[type='password'],
 .default-form .form-group input[type='number'],
+.default-form .form-group input[type='tel'],
 .default-form .form-group textarea{
   position: relative;
   width: 100%;
@@ -3690,6 +3698,7 @@ button.theme-btn{
 
 .contact-section .default-form .form-group input[type='text'],
 .contact-section .default-form .form-group input[type='email'],
+.contact-section .default-form .form-group input[type='tel'],
 .contact-section .default-form .form-group textarea{
   border: 1px solid transparent;
   border-radius: 0px;
@@ -3764,4 +3773,10 @@ button.theme-btn{
 }
 .room-details .table-outer .table-text {
   font-size: 18px;
+}
+.google-map-section + footer{
+  display: none;
+}
+.contact-section form .form-group:nth-last-child(2) {
+  text-align: center;
 }
