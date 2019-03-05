@@ -1,134 +1,27 @@
 <?php
 /**
- * Template Name: Homepage
-**/
+ * Template Name: Service
+ * */
 
 get_header(); ?>
 
-<section class="main-slider slider-style-one">
-        <div class="container-fluid">
-            <ul class="main-slider-carousel owl-carousel owl-theme slide-nav">
-            <?php 
-                $images = get_field('slider_images');
-
-                if( !empty($images) ): 
-                    foreach( $images as $image ): ?>
-                        <li class="slider-wrapper">
-                        <div class="image"><img src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>"></div>
-                        <div class="slide-overlay"></div>
-                        </li>
-                        <?php endforeach; ?>
-                <?php else: ?>
-                    <li class="slider-wrapper">
-                        <div class="image"><img src="/yasnyy/wp-content/themes/yasnyy/images/main-slider/5.jpg" alt=""></div>
-                        <div class="slide-overlay"></div>
-                    </li>
-                <?php endif; ?>
-            <div class="slider-caption centred">
-                <div class="container">
-                    <img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-sun.svg" alt="">
-                    <div class="text"><?php echo get_field('slider-small_text'); ?></div>
-                    <div class="tp-title"><?php echo get_field('slider-large_text'); ?></div>
-                    <div class="text text-large"><?php echo get_field('slider-medium_text'); ?></div>
-                </div>                             
-            </div>
-        </div>
-</section>
-
-<section class="about-section">
+<section class="page-title centred" style="background-image: url(/yasnyy/wp-content/themes/yasnyy/images/background/yasnyy-page-title-min.jpg);">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="about-content">
-                        <div class="sec-title left">Отель "Ясный"</div>
-                        <div class="text"><?php echo get_field('short_desc'); ?></div>
-                        <div class="link"><a href="/yasnyy/o-nas" class="theme-btn-two">О Нас</a></div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 clearfix">
-                    <div class="img-box">
-                        <figure class="img-three wow zoomIn animated"><img src="<?php echo get_field('about_image-1'); ?>" alt=""></figure>
-                        <figure class="img-two wow slideInRight" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="<?php echo get_field('about_image-3'); ?>" alt=""></figure>
-                        <figure class="img-one wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms"><img src="<?php echo get_field('about_image-2'); ?>" alt=""></figure>
-                    </div>
-                </div>
+            <div class="content-box">
+                <div class="title">Услуги</div>
+                <ul class="bread-crumb">
+                    <li><a href="/yasnyy/">Главная</a></li>
+                    <li>Услуги</li>
+                </ul>
             </div>
         </div>
 </section>
 
-<section class="room-section overlay-style-one gray-bg sec-pad">
-        <div class="container">
-            <div class="top-title">
-                <div class="sec-title">Наши комнаты</div>
-                <div class="title-text">Lorem Ipsum - это текст-"рыба"</div>
-            </div>
-            <div class="three-column-carousel">
-                <?php echo get_rooms_slider(); ?>
-            </div>
-
-        </div>
-</section>
-
-<section class="fact-counter sec-pad centred">
-    <div class="container">
-            <div class="top-title">
-                <div class="sec-title">Наши преимущества</div>
-                <div class="title-text">Lorem Ipsum - это текст-"рыба"</div>
-            </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 column">
-                <div class="single-item">
-                    <div class="content-box">
-                        <div class="icon-box"><i class="flaticon-bed"></i></div>
-                        <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="5">0</span></div>
-                        </article>
-                        <div class="text">Комнат</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 column">
-                <div class="single-item">
-                    <div class="content-box">
-                        <div class="icon-box"><i class="flaticon-bell-boy"></i></div>
-                        <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="10">0</span></div>
-                        </article>
-                        <div class="text">Сотрудников</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 column">
-                <div class="single-item">
-                    <div class="content-box">
-                        <div class="icon-box"><i class="flaticon-swimming-pool"></i></div>
-                        <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span>0</span><span class="count-text" data-speed="1500" data-stop="3">0</span></div>
-                        </article>
-                        <div class="text">Басейн</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 column">
-                <div class="single-item">
-                    <div class="content-box">
-                        <div class="icon-box"><i class="flaticon-medal"></i></div>
-                        <article class="column wow fadeIn" data-wow-duration="0ms">
-                            <div class="count-outer"><span class="count-text" data-speed="1500" data-stop="3">0</span></div>
-                        </article>
-                        <div class="text">Награды</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="service-section">
+<section class="service-section sec-pad">
         <div class="container">
             <div class="top-title">
                 <div class="sec-title">Наши услуги</div>
-                <div class="title-text">Lorem Ipsum - это текст-"рыба"</div>
+                <div class="title-text">Excepteur sint occaecat cupidatat</div>
             </div>
             <div class="custom-tab-title">
                 <ul class="tab-title clearfix">
@@ -267,6 +160,4 @@ get_header(); ?>
         </div>
 </section>
 
-
-
-<?php get_footer(); ?>
+<?php get_footer() ?>

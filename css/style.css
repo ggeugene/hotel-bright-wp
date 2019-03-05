@@ -166,7 +166,7 @@ a:hover{
 }
 
 input,button,select,textarea{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
 
@@ -1448,7 +1448,7 @@ figure{
   height: 85px;
   margin-bottom: 47px;
 }
-.testimonial-section .testimonial-content .author:before{
+.testimonial-section .testimonial-content .author::after{
   position: absolute;
   content: '';
   background: url(../images/resource/1.png);
@@ -1456,7 +1456,7 @@ figure{
   height: 5px;
   left: 50%;
   margin-left: -30px;
-  top: -26px;
+  bottom: -15px;
 }
 .testimonial-section .testimonial-content .thumb-box img{
   width: 100%;
@@ -1468,7 +1468,7 @@ figure{
   font-family: 'Open Sans', sans-serif;
   color: #0d2933;
   font-weight: 600;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
 }
 .testimonial-section .testimonial-content .title{
   margin-bottom: 12px;
@@ -2487,6 +2487,7 @@ button.theme-btn{
   text-align: center;
   padding: 29px 10px 29px 10px;
   border-left: 1px solid #e1e6eb;
+  font-weight: 600;
 }
 .single-room-list .content-box .right-content .price{
   position: relative;
@@ -2879,11 +2880,15 @@ button.theme-btn{
   background: #ffffff;
   border: 1px solid #e1e6eb;
   padding: 140px 15px 122px 15px;
-  transition: all 500ms ease;
+  transition: all 1500ms ease;
 }
-.service-style-three .single-item:hover .content-box{
+/* .service-style-three .single-item:hover .content-box{
   background: #D3AB5E;
   border: 1px solid #D3AB5E;
+} */
+.service-style-three .single-item:hover .content-box {
+  background: transparent;
+  border: 1px solid transparent;
 }
 .service-style-three .single-item .content-box .icon-box{
   margin-bottom: 15px;
