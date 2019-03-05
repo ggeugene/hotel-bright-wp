@@ -44,7 +44,7 @@ function clean_custom_menus() {
         $menu_list .= '<div class="left-content">' . $sidebar_left . '</div>';
 
         $menu_list .= '<div class="middle-content"><figure class="logo-box"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo.svg" alt=""></a></figure></div>';
-        
+
         $menu_list .= '<div class="right-content">' . $sidebar_right . '</div>';
         $menu_list .= '</div>';
 
@@ -114,3 +114,62 @@ function yasnyy_widgets_init() {
  
 }
 add_action( 'widgets_init', 'yasnyy_widgets_init' );
+
+// NEWS CUSTOM POST TYPE
+function room_custom_post_type() {
+    $args['post-type-room'] = array(
+          'labels' => array(
+              'name' => __( 'Комнаты', 'ggeugene' ),
+              'singular_name' => __( 'Комната', 'ggeugene' ),
+              'all_items' => 'Все Комнаты',
+              'add_new' => __( 'Добавить Новую', 'ggeugene' ),
+              'add_new_item' => __( 'Добавить новую Комнату', 'ggeugene' ),
+              'edit_item' => __( 'Изменить Комнату', 'ggeugene' ),
+              'new_item' => __( 'Новая Комната', 'ggeugene' ),
+              'view_item' => __( 'Просмотреть Комнату', 'ggeugene' ),
+              'search_items' => __( 'Искать Комнаты', 'ggeugene' ),
+              'not_found' => __( 'Комнаты не найдены', 'ggeugene' ),
+              'not_found_in_trash' => __( 'Комнаты не найдены в корзине', 'ggeugene' ),
+              'parent_item_colon' => __( 'Родительская Комната:', 'ggeugene' ),
+              'menu_name' => __( 'Комнаты', 'ggeugene' ),
+          ),
+          'hierarchical' => true,
+          'description' => 'Добавьте Комнаты',
+          'supports' => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+          'taxonomies' => array('room_cats'),
+          'menu_icon' => 'dashicons-building',
+          'show_ui' => true,
+          'public' => true,
+          'publicly_queryable' => true,
+          'exclude_from_search' => false,
+          'capability_type' => 'post',
+          'query_var' => 'room',
+          'menu_position' => 20,
+          'has_archive' => true,
+          'rewrite' => array('slug' => 'nomera', 'with_front' => true)
+          );
+      register_post_type('room', $args['post-type-room']);
+    $taxonomies = array();
+    $taxonomies['taxonomy-room_cats'] = array(
+      'labels' => array(
+        'name' => __( 'Категории Комнат', 'ggeugene' ),
+        'singular_name' => __( 'Категория Комнаты', 'ggeugene' ),
+        'search_items' =>  __( 'Найти категории Комнат', 'ggeugene' ),
+        'all_items' => __( 'Все категории Комнат', 'ggeugene' ),
+        'parent_item' => __( 'Родительская категория Комнаты', 'ggeugene' ),
+        'parent_item_colon' => __( 'Родительская категория Комнаты:', 'ggeugene' ),
+        'edit_item' => __( 'Изменить категорию Комнаты', 'ggeugene' ),
+        'update_item' => __( 'Обновить категорию Комнаты', 'ggeugene' ),
+        'add_new_item' => __( 'Добавить новую ', 'ggeugene' ),
+        'new_item_name' => __( 'Новое имя категории Комнаты', 'ggeugene' ),
+        'choose_from_most_used'	=> __( 'Выберите категорию Комнаты из самых популярных', 'ggeugene' )
+      ),
+      'hierarchical' => true,
+      'query_var' => true,
+      'rewrite' => array( 'slug' => 'nomera' )
+    );
+    /* Register taxonomy: name, cpt, arguments */
+    register_taxonomy('room_cats', array('room'), $taxonomies['taxonomy-room_cats']);
+    register_taxonomy_for_object_type('room_cats', 'room');
+  }
+  add_action( 'init', 'room_custom_post_type' );

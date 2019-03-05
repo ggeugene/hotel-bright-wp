@@ -201,7 +201,7 @@ p{
 
 h1,h2,h3,h4,h5,h6 {
   position:relative;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   font-weight: 400;
   margin-bottom: 0px;
   color: #333333;
@@ -2303,7 +2303,7 @@ button.theme-btn{
 .page-title .content-box .title{
   position: relative;
   font-size: 44px;
-  font-family: 'Monsterrat', serif;
+  font-family: 'Montserrat', serif;
   line-height: 52px;
   color: #ffffff;
   font-weight: 700;
@@ -2520,10 +2520,10 @@ button.theme-btn{
 /**room-details **/
 
 .room-details{
-  padding: 107px 0px 120px;
+  padding: 107px 0px 20px;
 }
 .room-details .room-details-content .contnt-style-one h2{
-  margin-bottom: 4px;
+  margin-bottom: 40px;
 }
 .room-details .room-details-content .contnt-style-one .rating{
   margin-bottom: 42px;
@@ -2574,7 +2574,7 @@ button.theme-btn{
   width: 100%;
 }
 .room-details .room-details-content .single-item-carousel{
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .room-details .room-details-content .single-item-carousel img {
   width: 100%;
@@ -3738,4 +3738,30 @@ button.theme-btn{
 }
 .owl-carousel:not(.main-slider-carousel) .owl-nav [class*="owl-"] {
   background: #ffffff;
+}
+
+.room-details .table-outer ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.room-details .table-outer ul > li {
+  width: 24%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+.room-details .table-outer .icon-box {
+  margin-right: 20px;
+  color: #D3AB5E;
+  line-height: 1;
+}
+.room-details .table-outer .icon-box i {
+  font-size: 25px;
+}
+.room-details .table-outer .table-text {
+  font-size: 18px;
 }
