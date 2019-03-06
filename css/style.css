@@ -3690,7 +3690,7 @@ button.theme-btn{
 .contact-info .single-item .icon-box{
   position: absolute;
   left: 0px;
-  top: 11px;
+  top: 5px;
 }
 .contact-info .single-item .text, .contact-info .single-item .text a{
   color: #333333;
@@ -3785,4 +3785,18 @@ button.theme-btn{
 }
 .contact-section form .form-group:nth-last-child(2) {
   text-align: center;
+}
+.about-section.about-us-page .owl-carousel:not(.main-slider-carousel) .owl-next {
+   right: 0;
+}
+.about-section.about-us-page .owl-carousel:not(.main-slider-carousel) .owl-prev {
+  left: 0;
+}
+.about-section.about-us-page .about-content {
+  margin-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+}
+.about-section.about-us-page {
+  padding-bottom: 0;
 }
