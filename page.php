@@ -5,6 +5,15 @@
 
 get_header(); ?>
 
+<section class="page-title centred" style="background-image: url(/yasnyy/wp-content/themes/yasnyy/images/background/yasnyy-page-title-min.jpg);">
+        <div class="container">
+            <div class="content-box">
+                <div class="title"><?php the_title(); ?></div>
+                <?php custom_breadcrumbs(); ?>
+            </div>
+        </div>
+</section>
+
 <section class="sec-pad">
     <div class="container">
         <div class="row">

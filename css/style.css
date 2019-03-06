@@ -3793,3 +3793,25 @@ button.theme-btn{
 .contact-section form .form-group:nth-last-child(2) {
   text-align: center;
 }
+.breadcrumbs {
+  display: flex;
+  justify-content: center;
+}
+.breadcrumbs .separator {
+  margin: 0 5px;
+}
+.breadcrumbs-arrow::before {
+  content: "\f054";
+  display: block;
+  position: relative;
+  color: #ffffff;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+}
+.breadcrumbs > li,
+.breadcrumbs > li a {
+  color: #ffffff;
+}
+.breadcrumbs > li a:hover {
+  color: #D3AB5E;
+}

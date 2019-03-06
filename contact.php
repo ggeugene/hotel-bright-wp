@@ -9,10 +9,7 @@ get_header(); ?>
         <div class="container">
             <div class="content-box">
                 <div class="title"><?php the_title() ?></div>
-                <ul class="bread-crumb">
-                    <li><a href="/yasnyy/">Главная</a></li>
-                    <li><?php the_title() ?></li>
-                </ul>
+                <?php custom_breadcrumbs(); ?>
             </div>
         </div>
     </section>
