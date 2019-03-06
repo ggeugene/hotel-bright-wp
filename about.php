@@ -17,10 +17,10 @@ get_header(); ?>
         </div>
 </section>
 
-<section class="about-section about-us-page">
+<section class="about-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="col-lg-12 col-md-12 col-sm-12">
                     <div class="single-item-carousel">
                         <?php $about_images = get_field('about_images');
 
@@ -33,12 +33,6 @@ get_header(); ?>
                         <?php endif; ?>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 clearfix">
-                    <div class="about-content">
-                        <div class="sec-title left">Отель "Ясный"</div>
-                        <div class="text"><?php echo get_field('desc_field'); ?></div>
-                    </div>
-                </div>
             </div>
         </div>
 </section>
@@ -47,6 +41,9 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 column">
+                <div class="about-content">
+                    <div class="sec-title left">Отель "Ясный"</div>
+                </div>
             <?php while ( have_posts() ) : the_post(); 
                                     the_content();
                                 endwhile; ?>
