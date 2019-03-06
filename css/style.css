@@ -2231,7 +2231,7 @@ button.theme-btn{
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  background-color: rgba(13, 41, 51, 0.80);
+  background-color: rgba(211,171,94, 0.80);
 }
 .overlay-style-two .single-item img {
   width: 100%;
@@ -2271,6 +2271,12 @@ button.theme-btn{
 }
 .overlay-style-two .single-item:hover .overlay {
   opacity: 1;
+}
+.overlay-style-two .single-item .content-box .price {
+  transition: color .5s;
+}
+.overlay-style-two .single-item:hover .content-box .price {
+  color: #333333;
 }
 .overlay-style-two .single-item .overlay a {
   position: relative;
@@ -2974,6 +2980,7 @@ button.theme-btn{
   display: inline-block;
   color: #ffffff;
   line-height: 30px;
+  font-weight: 500;
 }
 .single-dishes-content .content-box h3 a:hover{
   color: #D3AB5E;

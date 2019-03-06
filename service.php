@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="container">
             <div class="top-title">
                 <div class="sec-title">Наши услуги</div>
-                <div class="title-text">Excepteur sint occaecat cupidatat</div>
+                <div class="title-text">Lorem Ipsum - это текст-"рыба"</div>
             </div>
             <div class="custom-tab-title">
                 <ul class="tab-title clearfix">
@@ -134,8 +134,8 @@ get_header(); ?>
 <section class="testimonial-section sec-pad centred">
         <div class="container">
             <div class="top-title">
-                <div class="sec-title">Отзывы</div>
-                <div class="title-text">Excepteur sint occaecat cupidatat</div>
+                <div class="sec-title">Отзывы из гостевой</div>
+                <div class="title-text">Lorem Ipsum - это текст-"рыба"</div>
             </div>
             <div class="three-column-carousel">
                 <div class="testimonial-content">

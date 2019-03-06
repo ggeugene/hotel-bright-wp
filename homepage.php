@@ -24,6 +24,7 @@ get_header(); ?>
                         <div class="slide-overlay"></div>
                     </li>
                 <?php endif; ?>
+                </ul>
             <div class="slider-caption centred">
                 <div class="container">
                     <img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-sun.svg" alt="">
@@ -241,8 +242,8 @@ get_header(); ?>
 <section class="testimonial-section sec-pad centred">
         <div class="container">
             <div class="top-title">
-                <div class="sec-title">Отзывы</div>
-                <div class="title-text">Excepteur sint occaecat cupidatat</div>
+                <div class="sec-title">Отзывы из гостевой</div>
+                <div class="title-text">Lorem Ipsum - это текст-"рыба"</div>
             </div>
             <div class="three-column-carousel">
                 <div class="testimonial-content">
