@@ -277,8 +277,11 @@ figure{
   text-align: center;
   z-index: 1;
 }
+header .theme-btn {
+  padding: 13px 35px 13px 35px;
+}
 .theme-btn:hover{
-  background: #cc9152;
+  background: #855E13;
   color: #ffffff;
 }
 .theme-btn-two{
@@ -461,7 +464,7 @@ figure{
   bottom: 30px;
 }
 .scroll-top:hover{
-  background: #cc9152;
+  background: #855E13;
 }
 .scroll-top span{
   color: #fff;
@@ -500,7 +503,7 @@ figure{
   z-index:999;
   width:100%;
   background: #ffffff;
-  box-shadow: 0 10px 10px rgba(13, 41, 51, 0.30);
+  /* box-shadow: 0 10px 10px rgba(13, 41, 51, 0.30); */
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
   -webkit-transition:all 500ms ease;
@@ -555,14 +558,12 @@ figure{
 .header-top{
   position: relative;
   width: 100%;
-  background: #FDF5ED;
+  background: #855E13;
   padding: 5px 92px 9px 50px;
-  display: flex;
-  justify-content: space-between;
 }
 .header-top .left-content{
   position: relative;
-  display: flex;
+  display: inline-block;
 }
 .header-top > div {
   width: 33%;
@@ -581,33 +582,48 @@ figure{
   margin-right: 34px;
   font-size: 12px;
   line-height: 1.5;
-  color: #333333;
+  color: #ffffff;
 }
 .header-top .left-content li:last-child{
   margin-right: 0px;
+}
+.header-top .left-content li:last-child a::before {
+  content: "\f095";
+  font-size: 14px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 .header-top .left-content li a{
   position: relative;
   display: inline-block;
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
-  color: #333333;
+  color: #ffffff;
   line-height: 1.5;
+  padding-left: 20px;
+}
+.header-top .left-content li:last-child a:first-child {
+  margin-right: 10px;
 }
 .header-top .left-content li a:hover{
   color: #D3AB5E;
 }
 .header-top .left-content li i:before{
   font-size: 14px;
-  color: #333333;
+  color: #ffffff;
   margin-right: 7px;
 }
 .header-top .right-content{
   position: relative;
-  justify-content: flex-end;
-  /* display: inline-block; */
-  /* margin-top: 1px; */
-  /* float: right; */
+  /* justify-content: flex-end; */
+  display: inline-block;
+  margin-top: 1px;
+  float: right;
+  text-align: right;
 }
 .header-top .right-content .social-box li{
   display: inline-block;
@@ -616,7 +632,7 @@ figure{
   position: relative;
   display: inline-block;
   font-size: 14px;
-  color: #333333;
+  color: #ffffff;
   margin: 0px 8px 0px 7px;
 }
 .header-top .right-content .social-box li a:hover{
@@ -627,10 +643,11 @@ figure{
 
 
 .header-bottom{
-  position: absolute;
   background: transparent;
-  width: 100%;
   padding: 0px 100px 0px 50px;
+}
+.sticky-header {
+  padding: 0 100px 0 50px;
 }
 .main-header .logo-box{
   position: relative;
@@ -647,6 +664,9 @@ figure{
   position: absolute;
   top: 20px;
   right: 0px;
+}
+.main-header .sticky-header .menu-area .link {
+  top: 5px;
 }
 .main-header .menu-area .link:before{
   position: absolute;
@@ -684,7 +704,7 @@ figure{
   display:block;
   font-size:17px;
   font-family: 'Open Sans', sans-serif;
-  color:#333333;
+  color:#ffffff;
   line-height:30px;
   font-weight:600;
   opacity:1;
@@ -781,7 +801,7 @@ figure{
   margin: 0px;
 }
 .sticky-header .main-menu .navigation > li > a{
-  padding: 14px 30px 16px 30px;
+  padding: 14px 10px 16px 10px;
   color: #333333;
 }
 
@@ -790,14 +810,10 @@ figure{
   background: #D3AB5E;
   color: #ffffff;
 }
-.sticky-header .logo-box {
-  display: block;
-  margin: 10px auto;
-  width: auto;
-  text-align: center;
-}
-.sticky-header .menu-area{
-  padding-right: 0px;
+.header-bottom .logo-box img,
+  .sticky-header .logo-box img {
+    height: 50px;
+    width: auto;
 }
 
 
@@ -1849,7 +1865,7 @@ figure{
 }
 .main-footer .newsletter-widget .form-group input[type='email']:focus + button,
 .main-footer .newsletter-widget .form-group button:hover{
-  background: #cc9152;
+  background: #855E13;
 }
 .main-footer .newsletter-widget .form-group button{
   position: absolute;
@@ -1870,7 +1886,7 @@ figure{
   transition: all 500ms ease;
 }
 .main-footer .newsletter-widget .form-group input[type='email']:focus{
-  border: 1px solid #cc9152;
+  border: 1px solid #855E13;
 }
 .main-footer .newsletter-widget{
   margin-left: 30px;
@@ -3813,5 +3829,17 @@ button.theme-btn{
   color: #ffffff;
 }
 .breadcrumbs > li a:hover {
+  color: #D3AB5E;
+}
+.menu-area .icon-phone-link i {
+  color: #ffffff;
+  padding: 12px;
+  background-color: #D3AB5E;
+  border: 1px solid transparent;
+  transition: all .3s ease;
+}
+.menu-area .icon-phone-link:hover i {
+  background-color: transparent;
+  border: 1px solid #D3AB5E;
   color: #D3AB5E;
 }

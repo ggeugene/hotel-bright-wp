@@ -43,13 +43,12 @@ function clean_custom_menus() {
         $menu_list = '<div class="header-top clearfix">' . "\n";
         $menu_list .= '<div class="left-content">' . $sidebar_left . '</div>';
 
-        $menu_list .= '<div class="middle-content"><figure class="logo-box"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo.svg" alt=""></a></figure></div>';
-
         $menu_list .= '<div class="right-content">' . $sidebar_right . '</div>';
         $menu_list .= '</div>';
 
         $menu_list .= '<div class="header-bottom clearfix">' . "\n";
-        $menu_list .= '<figure class="logo-box"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo.svg" alt=""></a></figure>';
+        $menu_list .= '<figure class="logo-box d-none d-lg-inline-block"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo.png" alt=""></a></figure>';
+        $menu_list .= '<figure class="logo-box d-lg-none"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo-dark.svg" alt=""></a></figure>';
         $menu_list .= '<div class="menu-area">';
         $menu_list .= '<nav class="main-menu navbar-expand-lg">';
         $menu_list .= '<div class="navbar-header">';
@@ -65,11 +64,11 @@ function clean_custom_menus() {
 			$menu_list .= "\t\t\t\t\t". '<li><a href="'. $url .'">'. $title .'</a></li>' ."\n";
         }
         $menu_list .= '</ul>';
-        $menu_list .= '</div></nav></div></div>' . "\n";
+        $menu_list .= '</div></nav>' . "\n";
+        $menu_list .= '<div class="link"><a href="#" class="theme-btn d-none d-lg-block">Забронировать</a><a class="d-block d-lg-none icon-phone-link" href="#"><i class="fas fa-phone"></i></a></div></div>' . "\n";
 
         $menu_list .= '<div class="sticky-header">';
-        $menu_list .= '<div class="container clearfix">';
-        $menu_list .= '<figure class="logo-box"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo.svg" alt=""></a></figure>';
+        $menu_list .= '<figure class="logo-box"><a href="/yasnyy/"><img src="/yasnyy/wp-content/themes/yasnyy/images/yasnyy-logo-dark.svg" alt=""></a></figure>';
         $menu_list .= '<div class="menu-area">';
         $menu_list .= '<nav class="main-menu navbar-expand-lg">';
         $menu_list .= '<div class="navbar-header">';
@@ -85,7 +84,8 @@ function clean_custom_menus() {
 			$menu_list .= "\t\t\t\t\t". '<li><a href="'. $url .'">'. $title .'</a></li>' ."\n";
         }
         $menu_list .= '</ul>';
-        $menu_list .= '</div></nav></div></div></div>' . "\n";
+        $menu_list .= '</div></nav>' . "\n";
+        $menu_list .= '<div class="link"><a href="#" class="theme-btn d-none d-lg-block">Забронировать</a><a class="d-block d-lg-none icon-phone-link" href="#"><i class="fas fa-phone"></i></a></div></div>' . "\n";
 
 	} else {
 		$menu_list = '<!-- no list defined -->';
